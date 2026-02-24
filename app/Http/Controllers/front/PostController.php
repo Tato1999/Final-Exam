@@ -47,7 +47,7 @@ class PostController extends Controller
         return response()->json([
             'posts' => PostResource::make(Post::with('category')->with('user')->with('images')->find($id)),
             "id"=>'id',
-            "name"=>"ame"
+            
         ]);
     }
 
